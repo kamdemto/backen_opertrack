@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : mar. 09 mai 2023 à 19:57
+-- Généré le : mar. 09 mai 2023 à 20:09
 -- Version du serveur : 10.4.24-MariaDB
 -- Version de PHP : 8.1.6
 
@@ -230,7 +230,8 @@ INSERT INTO `personal_access_tokens` (`id`, `tokenable_type`, `tokenable_id`, `n
 (49, 'App\\Models\\User', 1, 'opetrackApp', '3f40793739d2f2f4b7ed4d368f153b4e1c9dc3dc8ac3d72c9ece29cd0cf1a9d2', '[\"*\"]', NULL, NULL, '2023-05-09 14:23:22', '2023-05-09 14:23:22'),
 (50, 'App\\Models\\User', 11, 'opetrackApp', 'eacfe69c7cb263261f58867fbd9dcd8e1eae2c88b35d33ac5842e01dab3c5dcb', '[\"*\"]', NULL, NULL, '2023-05-09 14:25:43', '2023-05-09 14:25:43'),
 (51, 'App\\Models\\User', 11, 'opetrackApp', 'dbf5e8f9e999832a42161371cbe80bcbb8a36511a10cc7d3bc80199393291fa9', '[\"*\"]', NULL, NULL, '2023-05-09 14:28:20', '2023-05-09 14:28:20'),
-(52, 'App\\Models\\User', 1, 'opetrackApp', '34f2284cb73e847ed12ada82ccfa469394dbf76367716e53ea8210754d4f0454', '[\"*\"]', NULL, NULL, '2023-05-09 14:48:09', '2023-05-09 14:48:09');
+(52, 'App\\Models\\User', 1, 'opetrackApp', '34f2284cb73e847ed12ada82ccfa469394dbf76367716e53ea8210754d4f0454', '[\"*\"]', NULL, NULL, '2023-05-09 14:48:09', '2023-05-09 14:48:09'),
+(53, 'App\\Models\\User', 11, 'opetrackApp', '04214c21879e2b7d43e83d83d2499ce96a946946340d7fcde8076875355e4891', '[\"*\"]', NULL, NULL, '2023-05-09 15:08:00', '2023-05-09 15:08:00');
 
 -- --------------------------------------------------------
 
@@ -259,7 +260,7 @@ CREATE TABLE `users` (
 
 INSERT INTO `users` (`id`, `firstname`, `lastname`, `filiale`, `departement`, `roles`, `email`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
 (1, 'Nico', 'Alfred', 'MADA', 'SAV', 'ADMIN', 'nico@gmail.com', NULL, '$2y$10$vePgpbqhVv4pgZPSSR1JyOu2tozIjtSjcr5EcRjGp9n5LDtA7HkHu', NULL, '2023-05-08 05:30:11', '2023-05-08 05:30:11'),
-(11, 'Olivier', 'Kamdem', 'innovation', 'camtrack cameroun', 'client', 'olvier.kamdem@camtrack.net', NULL, '$2y$10$wiuPav0IWfpOwAarxLXi0uskhSrcoh7K7kEknbz0vmo8ucZHml0Gy', NULL, '2023-05-09 14:25:43', '2023-05-09 14:25:43');
+(11, 'Olivier', 'Kamdem', 'innovation', 'camtrack cameroun', 'admin', 'olivier.kamdem@camtrack.net', NULL, '$2y$10$wiuPav0IWfpOwAarxLXi0uskhSrcoh7K7kEknbz0vmo8ucZHml0Gy', NULL, '2023-05-09 14:25:43', '2023-05-09 14:25:43');
 
 --
 -- Index pour les tables déchargées
@@ -365,7 +366,7 @@ ALTER TABLE `oauth_personal_access_clients`
 -- AUTO_INCREMENT pour la table `personal_access_tokens`
 --
 ALTER TABLE `personal_access_tokens`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=53;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=54;
 
 --
 -- AUTO_INCREMENT pour la table `users`
